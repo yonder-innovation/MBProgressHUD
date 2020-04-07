@@ -376,10 +376,11 @@ static const CGFloat MBDefaultDetailsLabelFontSize = 12.f;
             if (@available(iOS 13.0, tvOS 13.0, *)) {
 #endif
                 activityIndicator = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleLarge];
-                activityIndicator.color = [UIColor whiteColor];
+                activityIndicator.color = [UIColor blackColor];
 #if !TARGET_OS_MACCATALYST
             } else {
                activityIndicator = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhiteLarge];
+               activityIndicator.color = [UIColor blackColor];
             }
 #endif
             [activityIndicator startAnimating];
